@@ -1,4 +1,39 @@
-/* Type your code here */
+/* Type your code here */ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./assets/background-image1.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #999;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    margin-left: 5rem;
+    margin-top: 5rem;
+}
+.img-cont {
+    display: flex;
+    align-items: flex-end !important;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+/* .wrapper { */
+/*     display: flex; */
+/*     flex-direction: column; */
+/*     justify-content: left; */
+/*     align-items: center; */
+/*     margin-left: 5rem; */
+/*     margin-top: 10rem; */
+/* } */
+
 
 
 /* change the font family and spacing as per your project font */
@@ -13,4 +48,75 @@
 	font-family: Nunito Sans;
     font-style: normal;
     
+}
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 60vw;
+    height: 50vh;
+    background-color: white;
+    margin-top: 3rem;
+}
+
+#customers tr td,
+#customers tr th {
+    padding: 15px;
+    text-align: left;
+}
+tr td {
+    text-align: center !important;
+    /* color: red; */
+}
+tr {
+    border-bottom: 1px solid hsl(0deg 0% 87%);
+}
+
+#customers tr:hover {
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+#customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: hsl(9deg 86% 58%);
+    color: white;
+}
+.head {
+    color: hsl(0deg 0% 41%);
+    font-size: 2rem;
+}
+.ch th {
+    background-color: hsl(0deg 0% 98%) !important;
+    color: hsl(0deg 0% 3%) !important;
+    text-align: center !important;
+}
+.hello {
+    text-align: left !important;
+}
+a {
+    text-decoration: none;
+    color: hsl(215deg 84% 57%);
+}
+td > span {
+    color: hsl(0deg 0% 49%);
+    text-align: left;
+}
+.mh {
+    font-size: 4.5rem;
+    text-shadow: 2px 6px 14px black;
+}
+span:hover {
+    cursor: pointer;
+}
+
+.footer {
+    display: flex;
+    justify-content: left !important;
+    align-items: left !important;
+    margin-top: 5rem;
+    left: 0;
+    font-weight: bolder;
+    font-size: 20px
 }

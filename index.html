@@ -1,13 +1,197 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <!-- Type your code here -->
-    <footer class="footer">Made with <img src="/assets/prograd-heart.svg"> by ProGrad</footer>
-</body>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CricPRO</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+
+    <body>
+        <div class="img-cont">
+            <img src="assets/Logo.JPG" alt="" />
+        </div>
+
+        <div
+            id="modal01"
+            onclick="this.style.display='none'"
+            style="margin-left: 3rem"
+        >
+            <span id="close" style="font-size: 2rem; display: none">X</span>
+            <div>
+                <img id="img01" style="width: 100%" />
+            </div>
+        </div>
+        <div class="wrapper">
+            <h1 class="mh">ICC WORLD CUP 2011</h1>
+            <h3 class="head">India vs SriLanka ScoreCard</h3>
+
+            <table id="customers">
+                <tr>
+                    <th>India Innings</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th>277-4 (48.2)</th>
+                </tr>
+                <tr class="ch">
+                    <th style="text-align: left !important">Batsman</th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                </tr>
+                <tr>
+                    <td class="hello">
+                        <a href="#" id="VS" onclick="handle(this.id)"
+                            >Virender Sehwag</a
+                        >
+                        <span
+                            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lbw b L
+                            Malinga</span
+                        >
+                    </td>
+                    <td>0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td class="hello">
+                        <a href="#" id="ST" onclick="handle(this.id)"
+                            >Sachin Tendulkar</a
+                        >
+                        <span
+                            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lbw b L
+                            Malinga</span
+                        >
+                    </td>
+                    <td>18</td>
+                    <td>14</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>128.57</td>
+                </tr>
+                <tr>
+                    <td class="hello">
+                        <a href="#" id="GG" onclick="handle(this.id)"
+                            >Gautam Gambhir</a
+                        >
+                        <span
+                            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lbw b L
+                            Malinga</span
+                        >
+                    </td>
+                    <td>97</td>
+                    <td>122</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>79.51</td>
+                </tr>
+                <tr>
+                    <td class="hello">
+                        <a href="#" id="VK" onclick="handle(this.id)"
+                            >Virat
+                            Kohli&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a
+                        >
+                        <span
+                            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lbw b L
+                            Malinga</span
+                        >
+                    </td>
+                    <td>35</td>
+                    <td>49</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>71.43</td>
+                </tr>
+                <tr>
+                    <td class="hello">
+                        <a href="#" id="MS" onclick="handle(this.id)"
+                            >MS Dhoni(c & wk)</a
+                        >
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not out</span>
+                    </td>
+                    <td>91</td>
+                    <td>79</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>115.19</td>
+                </tr>
+                <tr>
+                    <td class="hello">
+                        <a href="#" id="YS" onclick="handle(this.id)"
+                            >Yuvraj Singh</a
+                        >
+                        <span
+                            >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;not
+                            out</span
+                        >
+                    </td>
+                    <td>21</td>
+                    <td>24</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>87.50</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left !important">Extras</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>15(b 1,lb 6,w 8,nb 0,p 0)</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left !important">Total</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>277(4 wkts,48.2 Ov)</td>
+                </tr>
+                <tr>
+                    <td style="text-align: left !important">Did not Bat</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>
+                        <a href="#" id="SR" onclick="handle(this.id)"
+                            >Suresh Raina</a
+                        >,
+                        <a href="#" id="HS" onclick="handle(this.id)"
+                            >Harbhajan Singh</a
+                        >,
+                        <a href="#" id="ZK" onclick="handle(this.id)"
+                            >Zaheer Khan</a
+                        >,
+                        <a href="#" id="MP" onclick="handle(this.id)"
+                            >Munaf Patel</a
+                        >,
+                        <a href="#" id="SS" onclick="handle(this.id)"
+                            >S Sreesanth</a
+                        >
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <footer class="footer">
+            Made with <img src="/assets/prograd-heart.svg" /> by ProGrad
+        </footer>
+
+        <script>
+            function handle(element) {
+                // console.log(element);
+                document.getElementById('img01').src = `assets/${element}.png`;
+                document.getElementById('modal01').style.display = 'block';
+                document.getElementById('close').style.display = 'block';
+            }
+        </script>
+    </body>
 </html>
